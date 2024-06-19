@@ -1,0 +1,408 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'futura-pt', sans-serif;
+    line-height: 1.6;
+    background-color: #F1EEE8;
+    /* Light cream background */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-content {
+    flex: 1;
+    /* Allow the main content to grow and fill the remaining space */
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.hero h2 {
+    color: #004F63;
+    font-family: 'futura-pt', sans-serif;
+    font-weight: 900;
+    /* Ensure the font-weight is set to 900 for 'Black' style */
+}
+
+.hero p {
+    color: #132709;
+    /* Change color of the p element */
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+    display: none;
+}
+
+header .menu.active+.overlay {
+    display: block;
+}
+
+
+header {
+    background: #132709;
+    /* Dark green background */
+    color: #F1EEE8;
+    /* Light cream text */
+    padding: 5px 0;
+    /* height of navigation bar */
+    border-bottom: #004F63 5px solid;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+header .logo img {
+    max-width: 300px;
+    /* Increased logo size */
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+}
+
+header ul {
+    display: flex;
+    padding: 0;
+    list-style: none;
+    margin-left: auto;
+    /* Align navigation to the right */
+}
+
+header li {
+    display: inline;
+    padding: 0 20px;
+}
+
+header a {
+    color: #F1EEE8;
+    /* Light cream text */
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+header a:hover {
+    color: #004F63;
+}
+
+header .hamburger {
+    display: none;
+}
+
+
+header .menu {
+    display: none;
+    background-color: #F1EEE8;
+    top: calc(100% + 10px);
+    bottom: 0;
+    height: calc(100% - 70px);
+}
+
+header .menu.active {
+    display: block;
+    background-color: #F1EEE8;
+    bottom: 0;
+    height: 100vh;
+}
+
+header .menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+header .menu li {
+    padding: 10px 0;
+    display: block;
+    /* Make list items display as block to stack vertically */
+    border-bottom: none;
+    /* Remove border-bottom */
+}
+
+header .menu a {
+    color: #132709;
+    /* Change font color to black */
+    text-decoration: none;
+    font-size: 18px;
+}
+
+header .menu a:active {
+    color: #004F63;
+
+}
+
+
+@media (max-width: 768px) {
+    header {
+        height: 120px;
+        /* Set a fixed height for the header on smaller screens */
+        padding: 20px 0;
+        /* Adjust padding for smaller screens */
+    }
+
+    header ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background: #132709;
+        /* Dark green background */
+        position: absolute;
+        top: 70px;
+        left: 0;
+    }
+
+    header .hamburger {
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+        position: absolute;
+        right: 20px;
+        /* Adjust the right distance as needed */
+        top: 50%;
+        /* Align vertically in the middle */
+        transform: translateY(-50%);
+    }
+
+
+    header .hamburger span {
+        background: #F1EEE8;
+        /* Light cream */
+        display: block;
+        height: 3px;
+        margin: 5px 0;
+        width: 25px;
+    }
+
+    header .menu a:active {
+        color: #004F63;
+    }
+
+    header ul.active {
+        display: flex;
+    }
+
+    header li {
+        text-align: center;
+        padding: 15px 0;
+        /* border-top: 1px solid #004F63 */
+        /* Beige-brown border */
+    }
+
+    header .hamburger {
+        display: flex;
+        bottom: 0;
+    }
+
+    header .hamburger:active span {
+        background: #004F63;
+        bottom: 0;
+        /* Color of the hamburger menu when tapped */
+    }
+
+    header .logo {
+        position: absolute;
+        top: 15px;
+        left: 50%;
+        /* bottom: 15px; */
+        transform: translateX(-50%);
+    }
+}
+
+.hero {
+    background: url('coffee.jpg') no-repeat center center/cover;
+    height: 700px;
+    /* Increased height */
+    min-height: 300px;
+    /* Increased minimum height */
+    color: #F1EEE8;
+    /* Light cream text */
+    text-align: center;
+    padding-top: 250px;
+    /* Adjust padding to center text better */
+}
+
+@media (max-width: 768px) {
+    .hero {
+        height: auto;
+        min-height: 600px;
+        /* Ensures the banner is taller than the logo */
+        padding-top: 160px;
+        /* Adjust padding to ensure proper centering on small screens */
+        padding-bottom: 120px;
+        /* Add bottom padding for extra space */
+    }
+
+    header .logo img {
+        max-width: 200px;
+        /* Adjust logo size for smaller screens */
+    }
+
+    header .menu a:active {
+        color: #004F63;
+        /* Change font color on click */
+    }
+
+    header .menu a:hover {
+        color: #004F63;
+        /* Change font color on hover */
+    }
+
+    .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        /* Cover the entire viewport height */
+        background-color: rgba(0, 0, 0, 0.5);
+        /* Semi-transparent black overlay */
+        display: none;
+        /* Initially hide the overlay */
+        z-index: 9999;
+        /* Set a high z-index to ensure the overlay covers all other content */
+    }
+
+    header .menu.active+.overlay {
+        display: block;
+        /* Display the overlay when the menu is active */
+    }
+
+}
+
+.about,
+.menu,
+.contact {
+    padding: 30px 0;
+    background: #F1EEE8;
+    /* Light cream background */
+    color: #132709;
+    /* Dark green text */
+}
+
+.about h2,
+.menu h2,
+.contact h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #004F63;
+    font-family: 'futura-pt', sans-serif;
+    font-weight: 900;
+    /* Ensure the font-weight is set to 900 for 'Black' style */
+}
+
+.menu h3 {
+    text-align: center;
+    margin-bottom: 10px;
+    color: #132709;
+    font-family: 'futura-pt', sans-serif;
+}
+
+.menu ul {
+    text-align: center;
+}
+
+.about p {
+    text-align: left;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu li {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Semi-transparent black overlay */
+    display: none;
+    /* Initially hide the overlay */
+    z-index: 9999;
+    /* Set a high z-index to ensure the overlay covers all other content */
+}
+
+header .menu.active+.overlay {
+    display: block;
+    /* Display the overlay when the menu is active */
+}
+
+
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact label {
+    margin-top: 10px;
+}
+
+.contact input,
+.contact textarea {
+    width: 100%;
+    max-width: 500px;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #004F63;
+    background: #F1EEE8;
+    /* Light cream background */
+    color: #132709;
+    /* Dark green text */
+}
+
+.contact button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #004F63;
+    border: 0;
+    color: #F1EEE8;
+    /* Light cream text */
+    cursor: pointer;
+}
+
+.contact button.clicked {
+    background-color: #132709;
+}
+
+
+footer {
+    padding: 20px 0;
+    text-align: center;
+    background: #132709;
+    /* Dark green background */
+    color: #F1EEE8;
+    /* Light cream text */
+    margin-top: auto;
+}

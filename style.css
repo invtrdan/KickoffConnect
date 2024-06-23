@@ -7,8 +7,7 @@
 body {
     font-family: 'futura-pt', sans-serif;
     line-height: 1.6;
-    background-color: #26990E;
-    /* Light cream background */
+    background-color: #004F63;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -26,14 +25,14 @@ body {
 }
 
 .hero h2 {
-    color: #004F63;
+    color: white;
     font-family: 'futura-pt', sans-serif;
     font-weight: 900;
     /* Ensure the font-weight is set to 900 for 'Black' style */
 }
 
 .hero p {
-    color: #132709;
+    color: white;
     /* Change color of the p element */
 }
 
@@ -60,7 +59,7 @@ header {
     /* Light cream text */
     padding: 5px 0;
     /* height of navigation bar */
-    border-bottom: #004F63 5px solid;
+    border-bottom: black 5px solid;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -142,7 +141,7 @@ header .menu li {
 }
 
 header .menu a {
-    color: #132709;
+    color: black;
     /* Change font color to black */
     text-decoration: none;
     font-size: 18px;
@@ -166,7 +165,7 @@ header .menu a:active {
         display: none;
         flex-direction: column;
         width: 100%;
-        background: #132709;
+        background: black;
         /* Dark green background */
         position: absolute;
         top: 70px;
@@ -296,7 +295,7 @@ header .menu a:active {
 .contact {
     padding: 30px 0;
     background: white;
-    color: #132709;
+    color: black;
     /* Dark green text */
 }
 
@@ -305,7 +304,7 @@ header .menu a:active {
 .contact h2 {
     text-align: center;
     margin-bottom: 20px;
-    color: #004F63;
+    color: white;
     font-family: 'futura-pt', sans-serif;
     font-weight: 900;
     /* Ensure the font-weight is set to 900 for 'Black' style */
@@ -314,7 +313,7 @@ header .menu a:active {
 .menu h3 {
     text-align: center;
     margin-bottom: 10px;
-    color: #132709;
+    color: black;
     font-family: 'futura-pt', sans-serif;
 }
 
@@ -375,7 +374,7 @@ header .menu.active+.overlay {
     margin-top: 10px;
     border: 1px solid #004F63;
     background: white;
-    color: #132709;
+    color: black;
     /* Dark green text */
 }
 
@@ -389,14 +388,14 @@ header .menu.active+.overlay {
 }
 
 .contact button.clicked {
-    background-color: #132709;
+    background-color: black;
 }
 
 
 footer {
     padding: 20px 0;
     text-align: center;
-    background: #132709;
+    background: black;
     /* Dark green background */
     color: white;
     margin-top: auto;

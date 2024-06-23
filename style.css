@@ -7,7 +7,7 @@
 body {
     font-family: 'futura-pt', sans-serif;
     line-height: 1.6;
-    background-color: #F1EEE8;
+    background-color: #26990E;
     /* Light cream background */
     min-height: 100vh;
     display: flex;
@@ -54,9 +54,9 @@ header .menu.active+.overlay {
 
 
 header {
-    background: #132709;
+    background: white;
     /* Dark green background */
-    color: #F1EEE8;
+    color: black;
     /* Light cream text */
     padding: 5px 0;
     /* height of navigation bar */
@@ -98,8 +98,7 @@ header li {
 }
 
 header a {
-    color: #F1EEE8;
-    /* Light cream text */
+    color: black;
     text-decoration: none;
     text-transform: uppercase;
     font-size: 16px;
@@ -116,7 +115,7 @@ header .hamburger {
 
 header .menu {
     display: none;
-    background-color: #F1EEE8;
+    background-color: white;
     top: calc(100% + 10px);
     bottom: 0;
     height: calc(100% - 70px);
@@ -124,7 +123,7 @@ header .menu {
 
 header .menu.active {
     display: block;
-    background-color: #F1EEE8;
+    background-color: white;
     bottom: 0;
     height: 100vh;
 }
@@ -188,7 +187,7 @@ header .menu a:active {
 
 
     header .hamburger span {
-        background: #F1EEE8;
+        background: #004F63;
         /* Light cream */
         display: block;
         height: 3px;
@@ -237,7 +236,7 @@ header .menu a:active {
     /* Increased height */
     min-height: 300px;
     /* Increased minimum height */
-    color: #F1EEE8;
+    color: white;
     /* Light cream text */
     text-align: center;
     padding-top: 250px;
@@ -296,8 +295,7 @@ header .menu a:active {
 .menu,
 .contact {
     padding: 30px 0;
-    background: #F1EEE8;
-    /* Light cream background */
+    background: white;
     color: #132709;
     /* Dark green text */
 }
@@ -376,8 +374,7 @@ header .menu.active+.overlay {
     padding: 10px;
     margin-top: 10px;
     border: 1px solid #004F63;
-    background: #F1EEE8;
-    /* Light cream background */
+    background: white;
     color: #132709;
     /* Dark green text */
 }
@@ -387,8 +384,7 @@ header .menu.active+.overlay {
     padding: 10px 20px;
     background: #004F63;
     border: 0;
-    color: #F1EEE8;
-    /* Light cream text */
+    color: white;
     cursor: pointer;
 }
 
@@ -402,7 +398,6 @@ footer {
     text-align: center;
     background: #132709;
     /* Dark green background */
-    color: #F1EEE8;
-    /* Light cream text */
+    color: white;
     margin-top: auto;
 }

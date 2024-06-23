@@ -294,9 +294,9 @@ header .menu a:active {
 .menu,
 .contact {
     padding: 30px 0;
-    background: white;
-    color: black;
-    /* Dark green text */
+    background: #004F63;
+    color: white;
+    /* paragraph text */
 }
 
 .about h2,
@@ -375,15 +375,14 @@ header .menu.active+.overlay {
     border: 1px solid #004F63;
     background: white;
     color: black;
-    /* Dark green text */
 }
 
 .contact button {
     margin-top: 20px;
     padding: 10px 20px;
-    background: #004F63;
+    background: white;
     border: 0;
-    color: white;
+    color: #004F63;
     cursor: pointer;
 }
 

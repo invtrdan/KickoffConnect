@@ -7,10 +7,16 @@
 body {
     font-family: 'futura-pt', sans-serif;
     line-height: 1.6;
-    background-color: #004F63;
+    background: white;
+    background-color: white;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+}
+
+.home-page {
+    background: url('images/image1.png') no-repeat center center/cover;
+    /* Replace 'background-image.jpg' with the path to your image */
 }
 
 .main-content {
@@ -104,7 +110,7 @@ header a {
 }
 
 header a:hover {
-    color: grey;
+    color: black;
 }
 
 header .hamburger {
@@ -230,7 +236,7 @@ header .menu a:active {
 }
 
 .hero {
-    background: url('coffee.jpg') no-repeat center center/cover;
+    background: url('images/image2.png') no-repeat center center/cover;
     height: 700px;
     /* Increased height */
     min-height: 300px;
@@ -294,8 +300,8 @@ header .menu a:active {
 .menu,
 .contact {
     padding: 30px 0;
-    background: #004F63;
-    color: white;
+    background: white;
+    color: #022135;
     /* paragraph text */
 }
 
@@ -304,7 +310,7 @@ header .menu a:active {
 .contact h2 {
     text-align: center;
     margin-bottom: 20px;
-    color: white;
+    color: #022135;
     font-family: 'futura-pt', sans-serif;
     font-weight: 900;
     /* Ensure the font-weight is set to 900 for 'Black' style */

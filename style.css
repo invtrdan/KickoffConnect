@@ -471,3 +471,63 @@ footer {
     color: white;
     margin-top: auto;
 }
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    header nav {
+        display: none;
+        width: 100%;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        width: 100%;
+        background: #022135;
+    }
+
+    header nav ul li {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    header nav.active {
+        display: flex;
+    }
+
+    .container {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .left-section,
+    .right-section {
+        width: 100%;
+        height: auto;
+    }
+
+    .left-section {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .left-section h1 {
+        font-size: 2rem;
+    }
+
+    .left-section p {
+        font-size: 1rem;
+    }
+
+    .right-section img {
+        height: auto;
+    }
+}

@@ -53,10 +53,10 @@ header .menu.active+.overlay {
 
 
 header {
-    background: white;
+    background: #022135;
     /* Dark green background */
-    color: black;
-    /* Light cream text */
+    color: white;
+    /* text */
     padding: 5px 0;
     /* height of navigation bar */
     border-bottom: black 5px solid;
@@ -74,7 +74,7 @@ header .container {
 }
 
 header .logo img {
-    max-width: 300px;
+    max-width: 175px;
     /* Increased logo size */
 }
 
@@ -97,14 +97,14 @@ header li {
 }
 
 header a {
-    color: black;
+    color: white;
     text-decoration: none;
     text-transform: uppercase;
     font-size: 16px;
 }
 
 header a:hover {
-    color: #004F63;
+    color: grey;
 }
 
 header .hamburger {
@@ -114,7 +114,7 @@ header .hamburger {
 
 header .menu {
     display: none;
-    background-color: white;
+    background-color: #022135;
     top: calc(100% + 10px);
     bottom: 0;
     height: calc(100% - 70px);
@@ -186,7 +186,7 @@ header .menu a:active {
 
 
     header .hamburger span {
-        background: #004F63;
+        background: #022135;
         /* Light cream */
         display: block;
         height: 3px;

@@ -160,10 +160,11 @@ header .menu a:active {
 
 .container2 {
     display: flex;
+    flex: 1;
     width: 100%;
-    height: calc(100vh - 120px);
     background-color: white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 0px;
 }
 
 .left-section,
@@ -466,7 +467,7 @@ header .menu.active+.overlay {
 footer {
     padding: 20px 0;
     text-align: center;
-    background: black;
+    background: #022135;
     /* Dark green background */
     color: white;
     margin-top: auto;

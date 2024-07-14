@@ -65,7 +65,7 @@ header {
     /* text */
     padding: 5px 0;
     /* height of navigation bar */
-    border-bottom: black 5px solid;
+    border-bottom: #022135 5px solid;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -156,6 +156,72 @@ header .menu a {
 header .menu a:active {
     color: #004F63;
 
+}
+
+.container2 {
+    display: flex;
+    width: 100%;
+    height: calc(100vh - 120px);
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.left-section,
+.right-section {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.left-section {
+    background-color: white;
+    color: #022135;
+    padding: 50px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.left-section .content {
+    max-width: 400px;
+}
+
+.left-section .logo img {
+    width: 50px;
+    /* Adjust the size of the logo if necessary */
+}
+
+.left-section h1 {
+    font-weight: 900;
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+}
+
+.left-section p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+}
+
+.learn-more-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #022135;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.right-section {
+    width: 50%;
+}
+
+.right-section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 

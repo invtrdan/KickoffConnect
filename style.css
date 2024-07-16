@@ -109,11 +109,12 @@ header a {
 }
 
 header a:hover {
-    color: black;
+    color: green;
 }
 
 header .hamburger {
     display: none;
+    cursor: pointer;
 }
 
 header .menu {
@@ -145,7 +146,7 @@ header .menu li {
 }
 
 header .menu a {
-    color: black;
+    color: green;
     /* Change font color to black */
     text-decoration: none;
     font-size: 18px;
@@ -224,6 +225,83 @@ header .menu a:active {
     object-fit: cover;
 }
 
+/* Subscribe Box Styling */
+.Subscribe {
+    width: 100%;
+    height: 200px;
+    padding: 35px;
+    overflow: hidden;
+    position: relative;
+    justify-content: center;
+    /* border-radius: 6px; */
+    margin-bottom: 50px;
+    background-color: #022135;
+    /* Blue background color */
+}
+
+
+.Subscribe h3 {
+    color: white;
+    font-size: 28px;
+}
+
+.Subscribe p {
+    color: #827C8C;
+    font-size: 15px;
+    line-height: 24px;
+    margin-bottom: 30px;
+}
+
+/* Centering the form inside the Subscribe container */
+.Subscribe form {
+    z-index: 2;
+    position: absolute;
+    left: 50%;
+    /* Center horizontally */
+    top: 50%;
+    /* Center vertically */
+    transform: translate(-50%);
+    /* Adjust position to the exact center */
+    width: 320px;
+    height: 46px;
+    overflow: hidden;
+    border-radius: 4px;
+    background: white;
+    box-shadow: 0 3px 6px rgba(149, 144, 179, 0.20);
+    /* transition: transform 600ms cubic-bezier(0.2, 0, 0, 1); */
+}
+
+.Subscribe form input[type=text] {
+    border: none;
+    width: 100%;
+    height: 100%;
+    outline: none;
+    padding: 0 110px 0 20px;
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.Subscribe form button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0;
+    width: 110px;
+    height: 100%;
+    border: none;
+    background-color: white;
+    color: #022135;
+    font-size: 15px;
+    cursor: pointer;
+    outline: none;
+    transition: color 500ms;
+}
+
+.Subscribe form button:hover {
+    color: green;
+}
+
+
 @media (max-width: 768px) {
     header {
         height: auto;
@@ -247,7 +325,7 @@ header .menu a:active {
         display: none;
         flex-direction: column;
         width: 100%;
-        background: black;
+        background: green;
         position: absolute;
         top: 70px;
         left: 0;
@@ -264,12 +342,51 @@ header .menu a:active {
     }
 
     header .hamburger span {
-        background: #022135;
+        background: white;
         display: block;
         height: 3px;
         margin: 5px 0;
         width: 25px;
     }
+
+    .hamburger span {
+        display: block;
+        height: 3px;
+        width: 25px;
+        background-color: white;
+        /* Should contrast with the background */
+        margin: 5px 0;
+    }
+
+    .menu {
+        display: flex;
+        list-style: none;
+    }
+
+    .menu li {
+        padding: 10px;
+    }
+
+    .menu a {
+        color: white;
+        text-decoration: none;
+        font-size: 16px;
+        text-transform: uppercase;
+    }
+
+    /* Overlay styles */
+    .overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: -1;
+        /* Behind the menu initially */
+    }
+
 
     header .menu a:active {
         color: #004F63;
@@ -386,6 +503,43 @@ header .menu a:active {
     header .menu.active+.overlay {
         display: block;
         /* Display the overlay when the menu is active */
+    }
+
+    .hamburger {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menu {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        top: 0;
+        left: -100%;
+        /* Start off-screen */
+        background-color: #022135;
+        /* Maintain background consistency */
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: left 0.3s;
+        /* Smooth transition for sliding in */
+    }
+
+    .menu.active {
+        left: 0;
+        /* Slide in to view */
+    }
+
+    .overlay {
+        display: block;
+        z-index: -1;
+        /* Still behind the menu */
+    }
+
+    .overlay.active {
+        z-index: 2;
+        /* Above the content, below the menu */
     }
 }
 

@@ -1,24 +1,22 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const hamburger = document.getElementById("hamburger");
-    const navMenu = document.getElementById("nav-menu");
+    const hamburger = document.querySelector(".hamburger");
+    const menu = document.querySelector(".menu");
+    const overlay = document.querySelector('.overlay');
 
+    // Toggle menu and overlay by clicking hamburger
     hamburger.addEventListener("click", () => {
-        navMenu.classList.toggle("active");
+        toggleMenu();
+    });
+
+    // Also allow the overlay to close the menu
+    overlay.addEventListener("click", () => {
+        toggleMenu();
     });
 });
 
 function toggleMenu() {
-    var menu = document.querySelector('.menu');
-    var overlay = document.querySelector('.overlay');
-    menu.classList.toggle('active'); // Toggle the 'active' class on the navigation menu
-    overlay.classList.toggle('active'); // Toggle the 'active' class on the overlay
+    const menu = document.querySelector('.menu');
+    const overlay = document.querySelector('.overlay');
+    menu.classList.toggle('active');
+    overlay.classList.toggle('active');
 }
-
-// Get the send button element
-var sendButton = document.getElementById("sendButton");
-
-// Add a click event listener to the send button
-sendButton.addEventListener("click", function () {
-    // Add the 'clicked' class to the button when clicked
-    sendButton.classList.add("clicked");
-});

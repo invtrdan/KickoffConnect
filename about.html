@@ -1,81 +1,79 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About</title>
-    <link rel="stylesheet" href="style.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:wght@400;900&display=swap" rel="stylesheet">
-</head>
-</head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KickOff Connect</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <header>
-        <div class="container">
-            <div class="logo">
-                <img src="images/KICKOFF/3.png" alt="Coffee Shop Logo" />
-            </div>
-            <ul id="nav-menu">
+        <img src="images/KICKOFF/3.png" alt="KickOffConnect Logo">
+        <nav>
+            <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
+                <!-- <li><a href="about.html">About Us</a></li> -->
+                <li><a href="esa.html">ESA</a></li>
                 <li><a href="products.html">Products</a></li>
-                <li><a href="user_stories.html">User Stories</a></li>
                 <li><a href="leasing.html">Leasing</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
-
-            <nav>
-                <ul class="menu">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="products.html">Products</a></li>
-                    <li><a href="user_stories.html">User Stories</a></li>
-                    <li><a href="leasing.html">Leasing</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-
-            <div class="hamburger" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            </nav>
-        </div>
+            <button>BOOK A DEMO</button>
+        </nav>
     </header>
 
-    <div class="overlay" onclick="toggleMenu()"></div>
+    <section class="first-section">
+        <div class="image-container">
+            <img src="images/KICKOFF/1.png" alt="">
+        </div>
+        <div class="content-container">
+            <h2>About KickOff Connect</h2><br>
+            <p>Elite Skills Arena (ESA) products are built around the <b>philosophy of deliberate practice:</b>
+                intense
+                repetition combined with expert feedback.</p><br>
+            <p>Our team brings together expertise in elite football coaching, technology, and manufacturing to build
+                <b>the
+                    most advanced training equipment</b> in the world, <b>trusted by many of football’s leading
+                    clubs.</b>
+            </p><br>
+            <p>Our mission is to empower coaches, delivering meaningful results in technical development, tactical
+                awareness, and rehabilitation programmes.</p><br>
+            <!-- <button>ESA</button> -->
+        </div>
+    </section>
 
-    <section id="about" class="about">
-        <div class="container">
-            <h2>About Us</h2>
-            <p>
-                KickOff Connect is a dedicated team of soccer enthusiasts and army veterans committed to transforming
-                youth soccer athlete development in Florida. As passionate soccer parents of a young player, we bring a
-                unique blend of discipline, dedication, and strategic expertise to revolutionize the soccer landscape.
+    <section class="first-section">
+        <div class="image-container">
+            <img src="images/grass.png" alt="">
+        </div>
+        <div class="content-container">
+            <h2>About ESA</h2><br>
+            <p>Elite Skills Arena (ESA) products are built around the <b>philosophy of deliberate practice:</b>
+                intense
+                repetition combined with expert feedback.</p><br>
+            <p>Our team brings together expertise in elite football coaching, technology, and manufacturing to build
+                <b>the
+                    most advanced training equipment</b> in the world, <b>trusted by many of football’s leading
+                    clubs.</b>
             </p><br>
-            <p>
-                We are proud to be the official distribution partner of Elite Skills Arena, whose cutting-edge products
-                are utilized by top-tier soccer clubs in Europe, including Barcelona and Manchester City. By leveraging
-                this advanced technology, we aim to enhance the performance skills of future soccer stars, ensuring they
-                reach their full potential.
-            </p><br>
-            <p>
-                With a foundation built on trust, integrity, and a deep love for the game, KickOff Connect is your
-                trusted partner in youth soccer development.
-            </p><br>
+            <p>Our mission is to empower coaches, delivering meaningful results in technical development, tactical
+                awareness, and rehabilitation programmes.</p><br>
+            <!-- <button>ESA</button> -->
         </div>
     </section>
 
     <footer>
-        <div class="container">
-            <p>&copy; 2024 Kickoff Connect. All rights reserved.</p>
-        </div>
+        <section>
+            <h2>Subscribe to our Mailing List</h2>
+            <!-- <p>Sign-up below to follow all of the latest ESA news and events</p> -->
+            <form>
+                <input type="email" placeholder="Email Address" required>
+                <button type="submit">SUBSCRIBE</button>
+            </form>
+        </section>
     </footer>
-
-    <script src="script.js"></script>
 </body>
 
 </html>

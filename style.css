@@ -5,708 +5,325 @@
 }
 
 body {
-    font-family: 'futura-pt', sans-serif;
-    line-height: 1.6;
-    background: white;
-    background-color: white;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-}
-
-.home-page {
-    background: url('images/image1.png') no-repeat center center/cover;
-    /* Replace 'background-image.jpg' with the path to your image */
-}
-
-.main-content {
-    flex: 1;
-    /* Allow the main content to grow and fill the remaining space */
-}
-
-.container {
-    width: 80%;
-    margin: auto;
-    overflow: hidden;
-}
-
-.hero h2 {
+    font-family: Arial, sans-serif;
+    background-color: #022135;
     color: white;
-    font-family: 'futura-pt', sans-serif;
-    font-weight: 900;
-    /* Ensure the font-weight is set to 900 for 'Black' style */
-}
-
-.hero p {
-    color: white;
-    /* Change color of the p element */
-}
-
-.overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: 9999;
-    display: none;
-}
-
-header .menu.active+.overlay {
-    display: block;
+    margin: 0;
+    padding: 0;
 }
 
 header {
-    background: #022135;
-    /* Dark green background */
-    color: white;
-    /* text */
-    padding: 5px 0;
-    /* height of navigation bar */
-    border-bottom: #022135 5px solid;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: relative;
-}
-
-header .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-}
-
-header .logo img {
-    max-width: 175px;
-    /* Increased logo size */
-}
-
-header nav {
-    display: flex;
-    align-items: center;
-}
-
-header ul {
-    display: flex;
-    padding: 0;
-    list-style: none;
-    margin-left: auto;
-    /* Align navigation to the right */
-}
-
-header li {
-    display: inline;
-    padding: 0 20px;
-}
-
-header a {
-    color: white;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 16px;
-}
-
-header a:hover {
-    color: green;
-}
-
-header .hamburger {
-    display: none;
-    cursor: pointer;
-}
-
-header .menu {
-    display: none;
+    padding: 20px 130px;
     background-color: #022135;
-    top: calc(100% + 10px);
-    bottom: 0;
-    height: calc(100% - 70px);
 }
 
-header .menu.active {
-    display: block;
-    background-color: white;
-    bottom: 0;
-    height: 100vh;
+header img {
+    height: 150px;
 }
 
-header .menu ul {
-    list-style: none;
-    padding: 0;
-}
-
-header .menu li {
-    padding: 10px 0;
-    display: block;
-    /* Make list items display as block to stack vertically */
-    border-bottom: none;
-    /* Remove border-bottom */
-}
-
-header .menu a {
-    color: green;
-    /* Change font color to black */
-    text-decoration: none;
-    font-size: 18px;
-}
-
-header .menu a:active {
-    color: #004F63;
-}
-
-.container2 {
+nav {
     display: flex;
-    flex: 1;
-    width: 100%;
-    background-color: white;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-bottom: 0px;
-}
-
-.left-section,
-.right-section {
-    width: 50%;
-    display: flex;
+    /* Use flexbox to align children inline */
+    justify-content: flex-end;
+    /* Spreads the content evenly with maximum space between */
     align-items: center;
-    justify-content: center;
+    /* Centers items vertically */
+    padding: 0 150px;
+    /* Adds padding to left and right for spacing */
+    background-color: #022135;
+    /* Ensures background color consistency */
+    width: 100%
 }
 
-.left-section {
-    background-color: white;
-    color: #022135;
-    padding: 50px;
-    width: 50%;
+nav ul {
+    list-style: none;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    /* Aligns the list items in a row */
+    margin-right: 50px;
+    padding: 0;
+    /* margin: 0; */
+    /* Removes default margin */
 }
 
-.left-section .content {
-    max-width: 400px;
-    overflow-wrap: break-word;
-    /* Prevent overflow on smaller screens */
+nav a {
+    color: white;
+    /* Sets text color to white */
+    text-decoration: none;
+    /* Removes underline from links */
 }
 
-.left-section .logo img {
-    width: 50px;
-    /* Adjust the size of the logo if necessary */
+nav ul li {
+    margin-right: 20px;
+    /* Space between the links */
 }
 
-.left-section h1 {
-    font-weight: 900;
-    margin-bottom: 20px;
-    font-size: 2.5rem;
+nav ul li:last-child {
+    margin-right: 0;
+    /* Removes margin from the last item to avoid extra spacing */
 }
 
-.left-section p {
-    font-size: 1.2rem;
-    margin-bottom: 40px;
-}
-
-.learn-more-button {
-    display: inline-block;
+nav button {
+    background-color: #022135;
+    color: white;
+    border: 2px solid white;
     padding: 10px 20px;
-    background-color: #022135;
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 5px;
-}
-
-.right-section {
-    width: 50%;
-}
-
-.right-section img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-/* Subscribe Box Styling */
-.Subscribe {
-    width: 100%;
-    height: 200px;
-    padding: 35px;
-    overflow: hidden;
-    position: relative;
-    justify-content: center;
-    /* border-radius: 6px; */
-    margin-bottom: 50px;
-    background-color: #022135;
-    /* Blue background color */
-}
-
-
-.Subscribe h3 {
-    color: white;
-    font-size: 28px;
-}
-
-.Subscribe p {
-    color: #827C8C;
-    font-size: 15px;
-    line-height: 24px;
-    margin-bottom: 30px;
-}
-
-/* Centering the form inside the Subscribe container */
-.Subscribe form {
-    z-index: 2;
-    position: absolute;
-    left: 50%;
-    /* Center horizontally */
-    top: 50%;
-    /* Center vertically */
-    transform: translate(-50%);
-    /* Adjust position to the exact center */
-    width: 320px;
-    height: 46px;
-    overflow: hidden;
-    border-radius: 4px;
-    background: white;
-    box-shadow: 0 3px 6px rgba(149, 144, 179, 0.20);
-    /* transition: transform 600ms cubic-bezier(0.2, 0, 0, 1); */
-}
-
-.Subscribe form input[type=text] {
-    border: none;
-    width: 100%;
-    height: 100%;
-    outline: none;
-    padding: 0 110px 0 20px;
-    font-size: 15px;
-    font-family: 'Open Sans', sans-serif;
-}
-
-.Subscribe form button {
-    position: absolute;
-    top: 0;
-    right: 0;
-    padding: 0;
-    width: 110px;
-    height: 100%;
-    border: none;
-    background-color: white;
-    color: #022135;
-    font-size: 15px;
+    border-radius: 20px;
     cursor: pointer;
-    outline: none;
-    transition: color 500ms;
-}
-
-.Subscribe form button:hover {
-    color: green;
-}
-
-
-@media (max-width: 768px) {
-    header {
-        height: auto;
-        padding: 20px 0;
-        flex-direction: column;
-        align-items: center;
-        /* Center items in the header */
-    }
-
-    header .container {
-        flex-direction: column;
-        align-items: center;
-        /* Center items in the container */
-    }
-
-    header .logo {
-        margin-bottom: 10px;
-    }
-
-    header ul {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        background: green;
-        position: absolute;
-        top: 70px;
-        left: 0;
-    }
-
-    header .hamburger {
-        display: flex;
-        flex-direction: column;
-        cursor: pointer;
-        position: absolute;
-        right: 20px;
-        top: 20px;
-        transform: translateY(0);
-    }
-
-    header .hamburger span {
-        background: white;
-        display: block;
-        height: 3px;
-        margin: 5px 0;
-        width: 25px;
-    }
-
-    .hamburger span {
-        display: block;
-        height: 3px;
-        width: 25px;
-        background-color: white;
-        /* Should contrast with the background */
-        margin: 5px 0;
-    }
-
-    .menu {
-        display: flex;
-        list-style: none;
-    }
-
-    .menu li {
-        padding: 10px;
-    }
-
-    .menu a {
-        color: white;
-        text-decoration: none;
-        font-size: 16px;
-        text-transform: uppercase;
-    }
-
-    /* Overlay styles */
-    .overlay {
-        display: none;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0.5);
-        z-index: -1;
-        /* Behind the menu initially */
-    }
-
-
-    header .menu a:active {
-        color: #004F63;
-    }
-
-    header ul.active {
-        display: flex;
-    }
-
-    header li {
-        text-align: center;
-        padding: 15px 0;
-    }
-
-    header .hamburger:active span {
-        background: #004F63;
-        bottom: 0;
-        /* Color of the hamburger menu when tapped */
-    }
-
-    header .logo {
-        order: 1;
-        /* Ensure logo is ordered correctly */
-        margin-bottom: 10px;
-        /* Add margin to the bottom of the logo */
-    }
-
-    header .logo img {
-        max-width: 200px;
-        /* Adjust logo size for smaller screens */
-    }
-
-    .container2 {
-        flex-direction: column;
-    }
-
-    .left-section,
-    .right-section {
-        width: 100%;
-    }
-
-    .left-section {
-        padding: 20px;
-        text-align: center;
-    }
-
-    .right-section {
-        padding: 20px;
-        text-align: center;
-    }
-
-    .left-section h1 {
-        font-size: 2rem;
-    }
-
-    .left-section p {
-        font-size: 1rem;
-    }
-
-    .right-section img {
-        height: auto;
-    }
-}
-
-.hero {
-    background: url('images/image2.png') no-repeat center center/cover;
-    height: 700px;
-    /* Increased height */
-    min-height: 300px;
-    /* Increased minimum height */
-    color: white;
-    /* Light cream text */
-    text-align: center;
-    padding-top: 250px;
-    /* Adjust padding to center text better */
-}
-
-@media (max-width: 768px) {
-    .hero {
-        height: auto;
-        min-height: 600px;
-        /* Ensures the banner is taller than the logo */
-        padding-top: 160px;
-        /* Adjust padding to ensure proper centering on small screens */
-        padding-bottom: 120px;
-        /* Add bottom padding for extra space */
-    }
-
-    header .menu a:active {
-        color: #004F63;
-        /* Change font color on click */
-    }
-
-    header .menu a:hover {
-        color: #004F63;
-        /* Change font color on hover */
-    }
-
-    .overlay {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100vh;
-        /* Cover the entire viewport height */
-        background-color: rgba(0, 0, 0, 0.5);
-        /* Semi-transparent black overlay */
-        display: none;
-        /* Initially hide the overlay */
-        z-index: 9999;
-        /* Set a high z-index to ensure the overlay covers all other content */
-    }
-
-    header .menu.active+.overlay {
-        display: block;
-        /* Display the overlay when the menu is active */
-    }
-
-    .hamburger {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .menu {
-        position: fixed;
-        width: 100%;
-        height: 100vh;
-        top: 0;
-        left: -100%;
-        /* Start off-screen */
-        background-color: #022135;
-        /* Maintain background consistency */
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        transition: left 0.3s;
-        /* Smooth transition for sliding in */
-    }
-
-    .menu.active {
-        left: 0;
-        /* Slide in to view */
-    }
-
-    .overlay {
-        display: block;
-        z-index: -1;
-        /* Still behind the menu */
-    }
-
-    .overlay.active {
-        z-index: 2;
-        /* Above the content, below the menu */
-    }
-}
-
-.about,
-.menu,
-.contact {
-    padding: 30px 0;
-    background: white;
-    color: #022135;
-    /* paragraph text */
-}
-
-.about h2,
-.menu h2,
-.contact h2 {
-    text-align: center;
-    margin-bottom: 20px;
-    color: #022135;
-    font-family: 'futura-pt', sans-serif;
-    font-weight: 900;
-    /* Ensure the font-weight is set to 900 for 'Black' style */
-}
-
-.menu h3 {
-    text-align: center;
-    margin-bottom: 10px;
-    color: black;
-    font-family: 'futura-pt', sans-serif;
-}
-
-.menu ul {
-    text-align: center;
-}
-
-.about p {
-    text-align: left;
-}
-
-.menu ul {
-    list-style: none;
-    padding: 0;
-}
-
-.menu li {
-    margin: 10px 0;
-    font-size: 18px;
-}
-
-.overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    /* Semi-transparent black overlay */
-    display: none;
-    /* Initially hide the overlay */
-    z-index: 9999;
-    /* Set a high z-index to ensure the overlay covers all other content */
-}
-
-header .menu.active+.overlay {
-    display: block;
-    /* Display the overlay when the menu is active */
-}
-
-.contact form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.contact label {
-    margin-top: 10px;
-}
-
-.contact input,
-.contact textarea {
-    width: 100%;
-    max-width: 500px;
-    padding: 10px;
-    margin-top: 10px;
-    border: 1px solid #004F63;
-    background: white;
-    color: black;
-}
-
-.contact button {
-    margin-top: 20px;
-    padding: 10px 20px;
-    background: white;
-    border: 0;
-    color: #004F63;
-    cursor: pointer;
-}
-
-.contact button.clicked {
-    background-color: black;
 }
 
 footer {
-    padding: 20px 0;
+    background-color: #022135;
+    padding: 30px 50px;
     text-align: center;
-    background: #022135;
-    /* Dark green background */
-    color: white;
-    margin-top: auto;
 }
 
-@media (max-width: 768px) {
-    header {
-        flex-direction: column;
-        align-items: center;
-        height: auto;
-    }
+footer form {
+    margin-top: 20px;
+}
 
-    .hamburger {
-        display: flex;
-    }
+input,
+select,
+button {
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid #555;
+}
 
-    header nav {
-        display: none;
-        width: 100%;
-    }
+input,
+select {
+    width: 200px;
+}
 
-    header nav ul {
-        flex-direction: column;
-        width: 100%;
-        background: #022135;
-    }
+.first-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #fff;
+    /* Adjust background color as needed */
+}
 
-    header nav ul li {
-        margin: 10px 0;
-        text-align: center;
-    }
+.image-container {
+    display: flex;
+    /* Use flexbox to facilitate alignment */
+    justify-content: center;
+    /* Aligns the child elements to the right */
+    align-items: center;
+    /* Centers the image vertically */
+    height: 100%;
+    /* Adjust the height as necessary */
+    width: 50%;
+    /* Adjust the width as necessary */
+}
 
-    header nav.active {
-        display: flex;
-    }
+.image-container img {
+    width: 50%;
+    /* Sets the image width to 50% of its container */
+    height: auto;
+    /* Keeps the aspect ratio of the image */
+}
 
-    .container {
-        flex-direction: column;
-        height: auto;
-        align-items: center;
-    }
+.content-container {
+    width: 50%;
+    /* Adjust text width as needed */
+    padding: 20px;
+}
 
-    .left-section,
-    .right-section {
-        width: 100%;
-        height: auto;
-    }
+.content-container h2 {
+    color: #022135;
+    /* Adjust text color as needed */
+    margin-bottom: 10px;
+}
 
-    .left-section {
-        padding: 20px;
-        text-align: center;
-    }
+.content-container p {
+    color: #022135;
+    /* Adjust paragraph color as needed */
+    line-height: 1.5;
+}
 
-    .left-section h1 {
-        font-size: 2rem;
-    }
+button {
+    background-color: #022135;
+    color: white;
+    border: 2px solid white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+}
 
-    .left-section p {
-        font-size: 1rem;
-    }
+.product-ranges {
+    text-align: center;
+    color: white;
+    background-color: #022135;
+    /* Dark background for the section */
+    padding: 20px;
+}
 
-    .right-section img {
-        height: auto;
-    }
+.product-ranges h2 {
+    margin-bottom: 10px;
+}
+
+.product-ranges p {
+    margin-bottom: 20px;
+}
+
+.products {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.product {
+    position: relative;
+    width: 300px;
+    /* Fixed width for each product */
+    height: 200px;
+    /* Fixed height for each product */
+    overflow: hidden;
+    border-radius: 10px;
+    /* Rounded corners */
+}
+
+.product img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Ensures the images cover the area */
+}
+
+.product-label {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Semi-transparent black background */
+    color: white;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 16px;
+}
+
+.info-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: white;
+    /* Assuming a dark theme from the screenshot */
+    color: white;
+}
+
+.info-block {
+    width: 48%;
+    /* Approximately half the parent width, adjusting for padding/margin */
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.info-block h2 {
+    color: #022135;
+    margin-bottom: 10px;
+}
+
+.info-block p {
+    color: #022135;
+    margin-bottom: 20px;
+}
+
+.info-block img {
+    width: 80%;
+    /* Adjust based on actual image size and design preference */
+    margin-bottom: 20px;
+}
+
+.btn {
+    background-color: 022135;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Hover effect for buttons */
+.btn:hover {
+    background-color: black;
+}
+
+.contact-form {
+    color: #022135;
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+    padding: 20px;
+    box-sizing: border-box;
+    border: 4px solid white;
+    /* Adds a light grey border */
+    border-radius: 8px;
+    /* Optional: Adds rounded corners */
+    background-color: white;
+    /* Optional: Sets a white background for contrast */
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="tel"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.checkbox-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* Aligns items to the left for a tidy appearance */
+}
+
+.checkbox-group input[type="checkbox"] {
+    margin-right: 10px;
+    /* Provides sufficient space between the checkbox and the label */
+    cursor: pointer;
+    /* Indicates that the element is clickable */
+}
+
+.checkbox-group label {
+    display: flex;
+    align-items: center;
+    /* Vertically aligns the checkbox with the text */
+    margin-bottom: 8px;
+    /* Spacing between each checkbox item */
+}
+
+.checkbox-group input[type="checkbox"]+label {
+    cursor: pointer;
+    /* Indicates that the label is also clickable */
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #022135;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: black;
 }

@@ -1,22 +1,8 @@
-document.addEventListener("DOMContentLoaded", () => {
-    const hamburger = document.querySelector(".hamburger");
-    const menu = document.querySelector(".menu");
-    const overlay = document.querySelector('.overlay');
+document.addEventListener("DOMContentLoaded", function () {
+    const hamburger = document.getElementById("hamburger");
+    const navLinks = document.getElementById("nav-links");
 
-    // Toggle menu and overlay by clicking hamburger
-    hamburger.addEventListener("click", () => {
-        toggleMenu();
-    });
-
-    // Also allow the overlay to close the menu
-    overlay.addEventListener("click", () => {
-        toggleMenu();
+    hamburger.addEventListener("click", function () {
+        navLinks.classList.toggle("show");
     });
 });
-
-function toggleMenu() {
-    const menu = document.querySelector('.menu');
-    const overlay = document.querySelector('.overlay');
-    menu.classList.toggle('active');
-    overlay.classList.toggle('active');
-}

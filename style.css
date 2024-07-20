@@ -17,7 +17,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 130px;
+    padding: 20px 30px;
     background-color: #022135;
 }
 
@@ -39,6 +39,21 @@ nav {
     width: 100%
 }
 
+nav .hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+nav .hamburger span {
+    height: 3px;
+    width: 25px;
+    background: white;
+    margin: 4px 0;
+    transition: 0.4s;
+}
+
 nav ul {
     list-style: none;
     display: flex;
@@ -47,6 +62,7 @@ nav ul {
     padding: 0;
     /* margin: 0; */
     /* Removes default margin */
+    /* justify-content: center; */
 }
 
 nav a {
@@ -378,4 +394,49 @@ iframe {
     /* Ensures the image covers the div without distorting */
     display: block;
     /* Removes bottom margin/gap */
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 10px 20px;
+        /* Reduced padding on mobile */
+        flex-direction: column;
+        align-items: flex-center;
+    }
+
+    header img {
+        height: 90px;
+        margin-bottom: 10px;
+    }
+
+    nav {
+        flex-direction: row;
+        width: 100%;
+    }
+
+    nav .hamburger {
+        display: flex;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #022135;
+    }
+
+    nav ul.show {
+        display: flex;
+    }
+
+    nav ul li {
+        margin: 10px 20px;
+        text-align: center;
+        /* Center text in mobile view */
+    }
+
+    nav button {
+        display: none;
+        /* Hide the button on mobile screens */
+    }
 }

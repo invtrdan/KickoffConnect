@@ -400,7 +400,7 @@ iframe {
     header {
         padding: 10px 20px;
         /* Reduced padding on mobile */
-        flex-direction: column;
+        flex-direction: row;
         align-items: flex-center;
     }
 
@@ -438,5 +438,26 @@ iframe {
     nav button {
         display: none;
         /* Hide the button on mobile screens */
+    }
+
+    .first-section,
+    .info-section {
+        flex-direction: column;
+    }
+
+    .image-container,
+    .content-container,
+    .info-block {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .image-container img {
+        width: 100%;
+    }
+
+    .content-container,
+    .info-block {
+        text-align: center;
     }
 }

@@ -65,11 +65,18 @@ nav ul {
     /* justify-content: center; */
 }
 
+nav ul.show {
+    max-height: 300px;
+    /* Adjust this value based on the number of menu items */
+}
+
 nav a {
     color: white;
     /* Sets text color to white */
     text-decoration: none;
     /* Removes underline from links */
+    padding: 10px 20px;
+    display: block;
 }
 
 nav ul li {
@@ -77,10 +84,10 @@ nav ul li {
     /* Space between the links */
 }
 
-nav ul li:last-child {
-    margin-right: 0;
-    /* Removes margin from the last item to avoid extra spacing */
-}
+/* nav ul li:last-child {
+    margin-right: 0; */
+/* Removes margin from the last item to avoid extra spacing */
+/* } */
 
 nav button {
     background-color: #022135;
@@ -89,6 +96,7 @@ nav button {
     padding: 10px 20px;
     border-radius: 20px;
     cursor: pointer;
+    flex-shrink: 0;
 }
 
 footer {

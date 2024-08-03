@@ -1,0 +1,21 @@
+name: Update Subscribers
+
+on:
+  repository_dispatch:
+    types: [new_subscriber]
+
+jobs:
+  update-subscribers-file:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Update subscribers file
+        run: |
+          echo "${{ github.event.client_payload.name }}: ${{ github.event.client_payload.email }}" >> subscribers.txt
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add subscribers.txt
+          git commit -m "Add new subscriber"
+          git push

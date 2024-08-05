@@ -21,10 +21,6 @@ header {
     background-color: #022135;
 }
 
-.h3 {
-    color: rgba(0, 0, 0, 0.5);
-}
-
 header img {
     height: 90px;
 }
@@ -177,11 +173,14 @@ select {
     padding: 20px;
 }
 
-.content-container h2 {
+.content-container h2,
+h3 {
     color: #022135;
     /* Adjust text color as needed */
     margin-bottom: 10px;
 }
+
+
 
 .content-container p {
     color: #022135;

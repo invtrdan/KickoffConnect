@@ -21,6 +21,10 @@ header {
     background-color: #022135;
 }
 
+.h3 {
+    color: rgba(0, 0, 0, 0.5);
+}
+
 header img {
     height: 90px;
 }

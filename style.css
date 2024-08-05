@@ -259,7 +259,7 @@ button {
 }
 
 .info-block {
-    width: 48%;
+    width: 96%;
     /* Approximately half the parent width, adjusting for padding/margin */
     text-align: center;
     padding: 20px;

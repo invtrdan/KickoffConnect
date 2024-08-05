@@ -17,8 +17,8 @@
                 <li><a href="about.html">About Us</a></li>
                 <!-- <li><a href="esa.html">ESA</a></li> -->
                 <li><a href="products.html">Products</a></li>
-                <li><a href="#">Leasing</a></li>
-                <!-- <li><a href="book.html">Book</a></li> -->
+                <li><a href="leasing.html">Leasing</a></li>
+                <!-- <li><a href="#">Book</a></li> -->
                 <li><a href="contact.html">Contact</a></li>
             </ul>
             <div class="hamburger" id="hamburger">
@@ -29,40 +29,15 @@
         </nav>
     </header>
 
-    <div class="info-section">
-        <div class="info-block">
-            <h2>LEASING</h2>
-            <p>Introducing the ICON 4M – a state-of-the-art training system that combines cutting-edge technology
-                with
-                engaging, interactive drills. The ICON 4M is designed to improve players’ technical skills,
-                decision-making, and overall performance, making it a perfect addition to any soccer event.</p>
-        </div>
-    </div>
-
     <section class="first-section">
-        <div class="image-container">
-            <img src="images/Tag Heuer x Zlatan Ibrahimovic.jpg" alt="">
-        </div>
-        <div class="content-container">
-            <h2>For Events</h2><br>
-            <a href="book_events.html">
-                <button type="button">Book</button>
-            </a>
-        </div>
+        <form class="contact-form">
+            <center>
+                <h2>Create Event Booking Request</h2><br>
+            </center>
+            <div class="booqable-datepicker"></div>
+            <div class="booqable-product" data-id="icon-4m-skill-arena"></div>
+        </form>
     </section>
-
-    <section class="first-section">
-        <div class="image-container">
-            <img src="images/IMG_3509.jpg" alt="">
-        </div>
-        <div class="content-container">
-            <h2>For Academies</h2><br>
-            <a href="book_academies.html">
-                <button type="button">Lease</button>
-            </a>
-        </div>
-    </section>
-
 
     <!-- <footer>
         <section>
@@ -80,6 +55,13 @@
             <h2>Kickoff Connect</h2>
         </sectioon>
     </footer>
+
+    <script>
+        var booqableOptions = {
+            company: '3e32ee33-9401-4027-bd34-9442920541c3'
+        };
+    </script>
+    <script src="https://3e32ee33-9401-4027-bd34-9442920541c3.assets.booqable.com/v2/booqable.js"></script>
 
     <script src="script.js"></script>
 </body>

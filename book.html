@@ -34,44 +34,10 @@
             <center>
                 <h2>Create Booking Request</h2><br>
             </center>
-            <div class="form-group">
-                <label for="first-name">First Name</label>
-                <input type="text" id="first-name" name="first-name" required>
-            </div>
-            <div class="form-group">
-                <label for="last-name">Last Name</label>
-                <input type="text" id="last-name" name="last-name" required>
-            </div>
-            <div class="form-group">
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" required>
-            </div>
-            <div class="form-group">
-                <label for="phone">Phone</label>
-                <input type="tel" id="phone" name="phone">
-            </div>
-            <div class="form-group">
-                <label>Product(s) interest in</label>
-                <div class="checkbox-group">
-                    <input type="checkbox" id="icon-range" name="product-interest" value="Icon Range">
-                    <label for="icon-range">Icon Range</label>
-                    <input type="checkbox" id="wall-range" name="product-interest" value="Wall Range">
-                    <label for="wall-range">Wall Range</label>
-                    <input type="checkbox" id="wireless-range" name="product-interest" value="Wireless Range">
-                    <label for="wireless-range">Wireless Range</label>
-                    <input type="checkbox" id="data-hub" name="product-interest" value="Data Hub">
-                    <label for="wireless-range">Data Hub</label>
-                </div>
-            </div>
-            <div class="form-group">
-                <label for="date">Date</label>
-                <input type="date" id="date" name="date">
-            </div>
-            <div class="form-group">
-                <label for="time">Time</label>
-                <input type="time" id="time" name="time">
-            </div>
-            <button type="submit">Submit Booking Request</button>
+            <div class="booqable-datepicker"></div>
+            <div class="booqable-product-list"></div>
+            <div class="booqable-product" data-id="icon-4m-skill-arena"></div>
+            <div class="booqable-product-button" data-id="icon-4m-skill-arena"></div>
         </form>
     </section>
 
@@ -91,6 +57,13 @@
             <h2>Kickoff Connect</h2>
         </sectioon>
     </footer>
+
+    <script>
+        var booqableOptions = {
+            company: '3e32ee33-9401-4027-bd34-9442920541c3'
+        };
+    </script>
+    <script src="https://3e32ee33-9401-4027-bd34-9442920541c3.assets.booqable.com/v2/booqable.js"></script>
 
     <script src="script.js"></script>
 </body>

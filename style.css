@@ -625,6 +625,24 @@ iframe {
 }
 
 @media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        /* Hide the navigation links */
+        flex-direction: column;
+        width: 100%;
+        background-color: #022135;
+    }
+
+    .nav-links.show {
+        display: flex;
+        /* Show the navigation links when the hamburger menu is clicked */
+    }
+
+    .nav-links li {
+        width: 100%;
+        text-align: center;
+    }
+
     header {
         padding: 10px 20px;
         /* Reduced padding on mobile */

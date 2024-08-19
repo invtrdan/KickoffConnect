@@ -1,11 +1,7 @@
-document.addEventListener("DOMContentLoaded", function () {
-    const hamburger = document.getElementById("hamburger");
-    const navLinks = document.getElementById("nav-links");
-
-    hamburger.addEventListener("click", function () {
-        navLinks.classList.toggle("show");
-    });
+document.getElementById('hamburger-menu').addEventListener('click', function () {
+    window.location.href = 'menu.html';
 });
+
 
 document.getElementById('subscribeForm').addEventListener('submit', function (event) {
     event.preventDefault();

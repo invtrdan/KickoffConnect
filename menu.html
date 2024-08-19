@@ -12,13 +12,32 @@
             padding: 0;
             background-color: #022135;
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             height: 100vh;
         }
 
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .header img {
+            width: 150px;
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 28px;
+            font-weight: 700;
+            color: white;
+        }
+
         .menu-container {
-            background-color: white;
+            background-color: #fff;
             padding: 30px 40px;
             border-radius: 12px;
             box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
@@ -47,6 +66,10 @@
 </head>
 
 <body>
+    <div class="header">
+        <img src="images/KC_Blue_Logo.png" alt="KickOffConnect Logo">
+        <!-- <h1>Menu</h1> -->
+    </div>
     <div class="menu-container">
         <div class="menu-item"><a href="index.html">Home</a></div>
         <div class="menu-item"><a href="about.html">About Us</a></div>

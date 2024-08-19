@@ -4,159 +4,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KickOff Connect</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Products</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #022135;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .header img {
+            width: 150px;
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 28px;
+            font-weight: 700;
+            color: white;
+        }
+
+        .menu-container {
+            background-color: #fff;
+            padding: 30px 40px;
+            border-radius: 12px;
+            box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .menu-item {
+            margin: 20px 0;
+            font-size: 20px;
+            font-weight: 500;
+        }
+
+        .menu-item a {
+            text-decoration: none;
+            color: #022135;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .menu-item a:hover {
+            background-color: white;
+            color: #022135;
+        }
+    </style>
 </head>
 
 <body>
-    <header>
+    <div class="header">
         <img src="images/KC_Blue_Logo.png" alt="KickOffConnect Logo">
-        <nav>
-            <ul class="nav-links" id="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <!-- <li><a href="esa.html">ESA</a></li> -->
-                <li><a href="#">Products</a></li>
-                <li><a href="leasing.html">Leasing</a></li>
-                <!-- <li><a href="book.html">Book</a></li> -->
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-            <div class="hamburger-menu" id="hamburger-menu">
-                <div class="bar"></div>
-                <div class="bar"></div>
-                <div class="bar"></div>
-            </div>
-        </nav>
-    </header>
-
-    <section class="first-section">
-        <div class="image-container">
-            <img src="images/ESA_Icon_Rev 2_Cobalt Blue_Gloss_White.tif" alt="">
-        </div>
-        <div class="content-container">
-            <h2>ICON Standard</h2><br>
-            <a href="contact.html">
-                <button type="button">Contact Us</button>
-            </a>
-        </div>
-    </section>
-
-    <section class="first-section">
-        <div class="image-container">
-            <img src="images/ESA_Icon_Fast Feet_Black Grey_Matte_White_R0.tif" alt="">
-        </div>
-        <div class="content-container">
-            <h2>ICON Fast Feet</h2><br>
-            <a href="contact.html">
-                <button type="button">Contact Us</button>
-            </a>
-        </div>
-    </section>
-
-    <section class="first-section">
-        <div class="image-container">
-            <img src="images/ESA_Icon V2_Cobalt Blue_Gloss_White_R1.tif" alt="">
-        </div>
-        <div class="content-container">
-            <h2>ICON V2</h2><br>
-            <a href="contact.html">
-                <button type="button">Contact Us</button>
-            </a>
-        </div>
-    </section>
-
-    <section class="first-section">
-        <div class="image-container">
-            <img src="images/ESA_Icon_Q_Cobalt Blue_Gloss_White_R1.tif" alt="">
-        </div>
-        <div class="content-container">
-            <h2>ICON Q</h2><br>
-            <a href="contact.html">
-                <button type="button">Contact Us</button>
-            </a>
-        </div>
-    </section>
-
-    <section class="first-section">
-        <div class="image-container">
-            <img src="images/ESA_Icon_28 Panel_Goal Wall_Traffic Red_Gloss_White_R0.tif" alt="">
-        </div>
-        <div class="content-container">
-            <h2>Precision Wall Range: 28 Panel</h2><br>
-            <a href="contact.html">
-                <button type="button">Contact Us</button>
-            </a>
-        </div>
-    </section>
-
-    <section class="first-section">
-        <div class="image-container">
-            <img src="images/ESA_Icon_9 Panel_Goal Wall_Jet Black_Gloss_White_R0.tif" alt="">
-        </div>
-        <div class="content-container">
-            <h2>Precision Wall Range: 9 Panel</h2><br>
-            <a href="contact.html">
-                <button type="button">Contact Us</button>
-            </a>
-        </div>
-    </section>
-
-    <section class="first-section">
-        <div class="image-container">
-            <img src="images/ESA_Wireless Circuit_Green_Gloss_White_R0.tif" alt="">
-        </div>
-        <div class="content-container">
-            <h2>Wireless Circuit</h2><br>
-            <a href="contact.html">
-                <button type="button">Contact Us</button>
-            </a>
-        </div>
-    </section>
-
-    <section class="first-section">
-        <div class="image-container">
-            <img src="images/iPad (Leaderboard).jpg" alt="">
-        </div>
-        <div class="content-container">
-            <h2>Data Hub</h2><br>
-            <a href="contact.html">
-                <button type="button">Contact Us</button>
-            </a>
-        </div>
-    </section>
-
-    <div class="info-section">
-        <div class="info-block">
-            <h2>DOWNLOAD BROCHURE</h2>
-            <p>Still want to know more about ESA and our hi-tech equipment? Download our latest product brochure,
-                complete with all product features.</p>
-            <!-- <img src="images/grass.png" alt="Brochure on iPad"> -->
-            <a href="https://drive.google.com/file/d/17p9Tzmp3FBr9Rd6WvVA8VZsK1DIuamFq/view?usp=drivesdk">
-                <button type="button">Brochure</button>
-            </a>
-        </div>
+        <h1>Products</h1>
     </div>
-
-
-
-    <!-- <footer>
-        <section>
-            <h2>Subscribe to our Mailing List</h2> -->
-    <!-- <p>Sign-up below to follow all of the latest ESA news and events</p> -->
-    <!-- <form>
-                <input type="email" placeholder="Email Address" required>
-                <button type="submit">SUBSCRIBE</button>
-            </form>
-        </section>
-    </footer> -->
-
-    <footer>
-        <sectioon>
-            <h2>Kickoff Connect</h2>
-        </sectioon>
-    </footer>
-
-    <script src="script.js"></script>
+    <div class="menu-container">
+        <div class="menu-item"><a href="icon_range.html">Icon Range</a></div>
+        <div class="menu-item"><a href="precision_wall.html">Precision Wall</a></div>
+        <div class="menu-item"><a href="wireless_circuit.html">Wireless Circuit</a></div>
+    </div>
 </body>
 
 </html>
